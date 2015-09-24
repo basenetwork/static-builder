@@ -16,7 +16,7 @@ git clone https://github.com/basenetwork/site-engine-js
 
 Usage
 -----
-### From command line
+#### From command line
 ``` shell
 
 # make static file
@@ -24,7 +24,7 @@ node static-builder/make.js ../site-engine-js/app-std/main.js > build.js
 
 ```
 
-### As web server
+#### As web server
 ``` shell
 # start web-server
 node static-builder/webserver.js [<port>] [<host>]
@@ -35,7 +35,10 @@ For example
 ``` shell
 # start local web-server
 node static-builder/webserver.js 8080 &
+```
 
+Get builds
+``` shell
 # get build of client lib
 curl http://localhost:8080/client.js
 
